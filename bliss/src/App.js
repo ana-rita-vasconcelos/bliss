@@ -2,15 +2,26 @@
 import './App.css';
 import { Route, Routes } from "react-router-dom";
 
+import Connect from "./components/connect";
+
+import Home from "./pages/home/home";
+import DetailScreen from "./pages/details/detail-screen";
+import ListScreen from "./pages/list/list-screen";
+import ShareScreen from "./pages/share/share-screen";
+
 function App() {
   return (
 		<div className="App">
-			<Routes>
-				<Route path="/" element={<Home />} />
-				<Route path="/share" element={<ShareScreen />} />
-				<Route path="/questions" element={<ListScreen />} />
-				<Route path="/questions/:questionId" element={<DetailScreen />} />
-			</Routes>
+			<Connect>
+				<div className="App">
+					<Routes>
+						<Route path="/" element={<Home />} />
+						<Route path="/share" element={<ShareScreen />} />
+						<Route path="/questions" element={<ListScreen />} />
+						<Route path="/questions/:questionId" element={<DetailScreen />} />
+					</Routes>
+				</div>
+			</Connect>
 
 			{/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
