@@ -2,7 +2,7 @@
 import './App.css';
 import { Route, Routes } from "react-router-dom";
 
-import Connect from "./components/connect";
+import Connect from "./components/connect/connect";
 
 import Home from "./pages/home/home";
 import DetailScreen from "./pages/details/detail-screen";
