@@ -1,0 +1,15 @@
+.share__container {
+	height: 50vh;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1.5em;
+	background-color: #5f264a;
+	border-radius: 0.5em;
+}
+
+.share__title {
+	color: #B0A4A4;
+	font-weight: bold;
+}
