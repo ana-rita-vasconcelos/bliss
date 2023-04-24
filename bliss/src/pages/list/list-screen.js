@@ -1,8 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import "./list-screen.css";
-import Search from "../../components/search";
-import Loading from "../../components/loading";
+import Search from "../../components/search/search";
+import Loading from "../../components/loading/loading";
 import ShareScreen from "../share/share-screen";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaShare } from "react-icons/fa";
